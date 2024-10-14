@@ -47,3 +47,21 @@ footer {
     padding: 10px 0;
     background-color: #f1f1f1;
 }
+
+/* CSSファイル (styles.css) */
+.image-before {
+    position: relative; /* 親要素を相対位置に */
+}
+
+.image-before::before {
+    content: '';
+    background-image: url('images/bikao.jpg');
+    background-size: cover;
+    background-position: center;
+    display: block; /* ブロック要素として表示 */
+    width: 100px; /* 幅を指定 */
+    height: 100px; /* 高さを指定 */
+    position: absolute; /* 絶対位置に */
+    top: 0; /* 上端からの位置 */
+    left: 0; /* 左端からの位置 */
+}
